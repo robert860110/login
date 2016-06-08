@@ -547,3 +547,7 @@ xsigin/signup popup
 #cd-reset-password.is-selected {
     display: block;
 }
+
+.confirmationCode-login {
+     display: none;
+}
