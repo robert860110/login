@@ -22,13 +22,27 @@ jQuery(document).ready(function($) {
 
     // show the confirmation code input field
     $(document).ready(function() {
-    	$('#sendCode-login').click(function(){
-    		$('.confirmationCode-login').css("display","block");
-    		$('#sendCode-login').val("Login");
-    	});
+        $('.main-nav').click(function() {
+            $('.confirmationCode-login').css("display", "none");
+            $('.confirmationCode-signup').css("display", "none");
+            $('#sendCode-login').val("Send Confirmation Code");
+            $('#sendCode-signup').val("Send Confirmation Code");
+        });
     });
 
+    $(document).ready(function() {
+        $('#sendCode-login').click(function() {
+            $('.confirmationCode-login').css("display", "block");
+            $('#sendCode-login').val("Login");
+        });
+    });
 
+    $(document).ready(function() {
+        $('#sendCode-signup').click(function() {
+            $('.confirmationCode-signup').css("display", "block");
+            $('#sendCode-signup').val("Create Account");
+        });
+    });
 
     //close modal
     formModal.on('click', function(event) {

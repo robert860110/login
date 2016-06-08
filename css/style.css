@@ -551,3 +551,7 @@ xsigin/signup popup
 .confirmationCode-login {
      display: none;
 }
+
+.confirmationCode-signup {
+     display: none;
+}
